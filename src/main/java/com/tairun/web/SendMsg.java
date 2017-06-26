@@ -24,13 +24,13 @@ public class SendMsg {
     public String sendMsg(HttpServletRequest request){
         String data = request.getParameter("data");
         Msg msg = null;
-        if(StringUtils.isNoneBlank(data)) {
+        if(StringUtils.isNotBlank(data)) {
             msg = JSON.parseObject(data, Msg.class);
-        }
-        try {
-            sendEmailService.sendEmail(msg);
-        }catch (Exception e){
-            e.printStackTrace();
+            try {
+                sendEmailService.sendEmail(msg);
+            }catch (Exception e){
+                e.printStackTrace();
+            }
         }
         return "success";
     }

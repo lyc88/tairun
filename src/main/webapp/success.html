@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>温馨提示</title>
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style1920.css">
+    <script type="text/javascript" src="static/js/jquery-1.4.2.js"></script>
+  </head>
+  <body>
+    <div class="content-box">
+    	<p>您的留言已发送成功，感谢您的支持！</p>
+    	<p>将在<span id="second">3</span>秒后自动关闭该页面</p>
+    </div>
+    <script type="text/javascript">
+      // 提示页面3s后自动关闭
+      $(function(){
+        setClock();
+      }); 
+      var second = 3;
+      var timer;
+      function setClock(){ 
+        if (second == 0) {
+          clearTimeout(timer);
+          window.close();
+          return;
+        }
+        document.getElementById('second').innerHTML = second--;
+        timer = setTimeout("setClock()",1000);
+      }
+    </script>
+  </body>
+</html>

@@ -31,7 +31,7 @@ public class SendEmailService {
     public boolean sendEmail(Msg msg) {
         String body = "姓名:" + msg.getName() + "<br/>电话:"
                 + msg.getTelephone()
-                + "<br/>qq:" + msg.getTelephone() + "<br/>需求:" + msg.getContent();
+                + /*"<br/>qq:" + msg.getTelephone() + */"<br/>需求:" + msg.getContent();
 
         String subject = body;
         Session session = Session.getDefaultInstance(properties,

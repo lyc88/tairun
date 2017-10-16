@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * Created by lyc on 2017/6/23.
@@ -21,15 +22,17 @@ public class SendMsg {
 
     @RequestMapping("sendEmail")
     @ResponseBody
-    public String sendMsg(HttpServletRequest request){
+    public String sendMsg(HttpServletRequest request, HttpServletResponse response){
+        response.setHeader("Access-Control-Allow-Origin","*");
         String data = request.getParameter("data");
         Msg msg = null;
         if(StringUtils.isNotBlank(data)) {
-            msg = JSON.parseObject(data, Msg.class);
             try {
+                msg = JSON.parseObject(data, Msg.class);
                 sendEmailService.sendEmail(msg);
             }catch (Exception e){
                 e.printStackTrace();
+                return "error";
             }
         }
         return "success";

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/idea/gitlocal/es/codegen/src/main/java/com/sishuok/maven/plugins/codegen/CodeGenMojo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/idea/gitlocal/es/parent/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/idea/gitlocal/es/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/idea/gitlocal/es/web/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/idea/gitlocal/es/web/src/main/resources/resources.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/idea/svn/weixin/src/test/java/com/lyc/set/Queue.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/shiro/shiro-example/shiro-example-chapter3/src/test/java/com/github/zhangkaitao/shiro/chapter3/PermissionTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/shiro/shiro-example/shiro-example-chapter3/src/test/java/com/github/zhangkaitao/shiro/chapter3/RoleTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/shiro/shiro-example/shiro-example-chapter3/src/test/resources/shiro-permission.ini">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/tairun/services/SendEmailService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/tairun/web/SendMsg.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/email.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/webapp/static/js/script.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -121,6 +121,7 @@ function sendMessage() {
 	contact.qq = $.trim($("#QQ").val());
 	contact.content = $.trim($("#require").val());
 	var data = JSON.stringify(contact);
+	debugger;
 	if (contact.name.length == 0 || contact.telephone.length == 0 ||
 			 contact.qq.length == 0|| contact.content.length == 0) {
 		$(".error-tips").text("请将所有信息填写完整！");
